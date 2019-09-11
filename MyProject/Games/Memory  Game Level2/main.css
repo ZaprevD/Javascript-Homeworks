@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/memory3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#root{
+    width: 90%;
+    margin:  0 auto;
+    padding-top: 30px;
+}
+
+.timer{
+    width: 30%;
+    margin: 0 auto;
+    background: rgb(160, 132, 100);
+    text-align: center;
+    font-size: 1.9em;
+    color: rgb(243, 207, 0);
+    padding: 5px;
+}
+
+.holder{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes{
+    width:16.66%;
+    height: 16.66%;
+    border: 2px solid rgb(224, 0, 0);
+    position: relative;
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(146, 125, 118);
+    transition: transform .5s linear;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    font-size: 1.6em;
+    line-height: 80px;
+    text-align: center;
+    transform: perspective(920px) rotateX(-180deg);
+    transition: transform .5s linear;
+}
+.back img{
+    width: 100%;
+    height: 100%;
+}
+
+.user-name{
+    padding: 10px;
+    font-size: 1.3em;
+    color:white;
+    background: rgb(31, 10, 31);
+    float: left;
+}
+.user-score{
+    padding: 10px;
+    font-size: 1.3em;
+    color:white;
+    background: rgb(31, 10, 31);
+    float: right;
+}
+
+.game-over{
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    left: 10%;
+    top:25%;
+    background: rgb(26, 25, 25);
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 10px;
+    line-height: 200px;
+    display: none;
+    
+}
+
+.game-over button{
+    width: 30%;
+    padding: 5px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+#loading{
+    width: 200px;
+    height: 200px;
+    border-top: 10px solid rgb(179, 4, 4);
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    border-radius: 50%;
+    animation: loading .5s ease-in-out  infinite ;
+}
+
+@keyframes loading{
+    100%{transform: rotate(360deg)};
+}

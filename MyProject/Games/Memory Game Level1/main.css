@@ -1,0 +1,108 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/memory3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#root{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 90px; 
+}
+
+.game-holder{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes{
+    width: 100px;
+    height: 100px;
+    width: 25%;
+    border: 1px solid black;
+    position: relative;
+}
+
+.locked{
+    width: 100px;
+    height: 100px;
+    width: 25%;
+    border: 1px solid black;
+    position: relative;
+}
+
+
+.back-side{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px;
+    border: 1px solid black;
+    transform: rotateX(180deg);
+    transition: .4s linear;
+}
+.back-side img{
+    width: 100%;
+    height: 100%;
+}
+.front-side{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: rgb(146, 125, 118);
+    border: 2px solid rgb(224, 0, 0);
+    backface-visibility: hidden;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px;
+    transition: .4s linear;
+}
+
+
+.user-name{
+    padding: 10px;
+    font-size: 1.3em;
+    color:white;
+    background: rgb(31, 10, 31);
+    float: left;
+}
+.user-score{
+    padding: 10px;
+    font-size: 1.3em;
+    color:white;
+    background: rgb(31, 10, 31);
+    float: right;
+}
+
+
+#loading{
+    width: 200px;
+    height: 200px;
+    border-top: 10px solid rgb(179, 4, 4);
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    border-radius: 50%;
+    animation: loading .5s ease-in-out  infinite ;
+}
+
+@keyframes loading{
+    100%{transform: rotate(360deg)};
+}
