@@ -1,6 +1,159 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: tahoma;
+}
+
+body{
+    background: url("game-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main{
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+.header{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    color: goldenrod;
+}
+/* REGISTER */
+.box-60{
+    width: 60%;
+    text-align: center;
+    color: goldenrod;
+}
+
+/* LOGIN */
+.box-40{
+    width: 40%;
+    text-align: center;
+    color: rgb(228, 177, 48);
+    position: relative;
+}
+
+.register{
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.register input{
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    width: 90%;
+    font-size: 1.1em
+}
+.register button{
+    width: 50%;
+    margin : 20px auto;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.login{
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.login input{
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    width: 90%;
+    font-size: 1.1em
+}
+
+.login button{
+    width: 50%;
+    margin : 20px auto;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#popup-msg{
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    display: none;
+    color: gold;
+    background: black;
+    z-index: 999;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 200px;
+}
+
+#error-msg{
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    color: red;
+    font-size: 1.3em;
+    text-align: center;
+    display: none;
+}
+
+.reg-error{
+    width: 100%;
+    color: red;
+    font-size: 17px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: none;
+}
+#logged-user{
+    padding: 5px;
+    background: rgb(189, 180, 180);
+    color: black;
+    font-size: 17px;
+    float: left;
+}
+
+#log-outBtn{
+    display: block;
+    padding: 2px;
+    background: rgb(22, 3, 22);
+    color: white;
+    font-size: 1.1em;
+    margin: 0 10px;
+}
+
+#continue{
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+    background: rgb(241, 241, 115);
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    text-align: center;
+}
+
+#continue:hover{
+cursor: pointer;
+background: red;
 }
