@@ -66,7 +66,7 @@ jQuery(document).ready(function ($) {
         }
         var boxes = $(".boxes");
 
-        function start() {
+        function game() {
             boxes.click(function () {
                 $(".locked").off();
                 clicks++;
@@ -95,9 +95,9 @@ jQuery(document).ready(function ($) {
                                 location.reload();
                             }, 800)
                         }
-                        start();
+                        game();
                     } else {
-                        currentUser.score -= 4;
+                        currentUser.score -= 2;
                         setTimeout(function () {
                             clickedItems[0].find('.front-side').css('transform', 'rotateX(0deg)');
                             clickedItems[0].find('.back-side').css('transform', 'rotateX(180deg)');
@@ -105,7 +105,7 @@ jQuery(document).ready(function ($) {
                             clickedItems[1].find('.back-side').css('transform', 'rotateX(180deg)');
                             clickedItems.length = 0
                             clicks = 0;
-                            start();
+                            game();
                         }, 600);
 
                     }
@@ -113,7 +113,7 @@ jQuery(document).ready(function ($) {
             })
         }
 
-        start();
+        game();
 
     }
     main();
