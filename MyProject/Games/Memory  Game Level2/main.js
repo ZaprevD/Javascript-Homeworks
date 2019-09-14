@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
             loading.hide();
         },1800)
         var presentationObj = new Presentation();
-        var images = await presentationObj.displayImages();
+        var images = await presentationObj.displayImagesLev2();
         var root = $("#root");
         var time = $("<div>").addClass("timer");
         var hold = $("<div>").addClass("holder");

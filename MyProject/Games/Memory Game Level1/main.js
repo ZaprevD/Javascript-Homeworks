@@ -10,7 +10,7 @@ $(document).ready(function () { //jQuery
             loading.hide();
         },900);
         var presentationObj = new Presentation();
-        var images = await presentationObj.displayImages();
+        var images = await presentationObj.displayImagesLev1();
         var currentUser = JSON.parse(localStorage.getItem("current"));
         var root = $("#root");
         var gameHolder = $("<div>").addClass("game-holder");

@@ -57,11 +57,15 @@ body{
 }
 
 .locked{
-    width: 100px;
-    height: 100px;
-    width: 25%;
+    width:16.66%;
+    height: 16.66%;
     border: 1px solid black;
     position: relative;
+}
+
+.locked img{
+    width: 100%;
+    height: 100%;
 }
 
 .back-side{
